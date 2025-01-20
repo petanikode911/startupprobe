@@ -19,7 +19,7 @@ RUN GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -buildvcs=false -o /app/st
 FROM asia-southeast2-docker.pkg.dev/dogwood-wharf-316804/base-image/distroless-go
 
 # Copy release binary that already compiled into distroless
-COPY --from=base-golang /app/startupprobe mock-startupprobe
+COPY --from=base-golang /app/startupprobe startupprobe
 
 CMD ["./startupprobe"]
 
