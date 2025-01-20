@@ -21,5 +21,5 @@ FROM asia-southeast2-docker.pkg.dev/dogwood-wharf-316804/base-image/distroless-g
 # Copy release binary that already compiled into distroless
 COPY --from=base-golang /app/startupprobe mock-startupprobe
 
-CMD ["./startupprobey"]
+CMD ["./startupprobe"]
 
