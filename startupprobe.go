@@ -9,7 +9,7 @@ import (
 func main() {
 	// Simulate a slow startup by sleeping for 30 seconds
 	fmt.Println("Starting application...")
-	time.Sleep(30 * time.Second)
+	time.Sleep(60 * time.Second)
 	fmt.Println("Application started!")
 
 	// Define the health check handler for "/healthz"
